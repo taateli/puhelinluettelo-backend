@@ -9,6 +9,7 @@ morgan.token('params', function getParams (req) {
   return JSON.stringify(req.body)
 })
 
+app.use(express.static('build'))
 app.use(cors())
 app.use(morgan(':method :url :params :status :res[content-length] - :response-time ms'))
 app.use(bodyParser.json())
