@@ -1,0 +1,22 @@
+{
+  "name": "puhelinluettelo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "node_modules/.bin/nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "node_modules/.bin/eslint ."
+  },
+  "author": "Tatu Helander",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  }
+}
