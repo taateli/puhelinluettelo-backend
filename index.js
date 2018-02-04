@@ -41,7 +41,7 @@ let persons = [
 app.get('/info', (req, res) => {
   const today = Date()
 
-  res.send('<div>puhelinluettelossa on ' + docs + ' henkilön tiedot</div><div> ' + today + '</div>')
+  res.send('<div>puhelinluettelossa on henkilön tiedot</div><div> ' + today + '</div>')
 })
 
 app.get('/api/persons', (request, response) => {
@@ -110,6 +110,7 @@ app.post('/api/persons', (request, response) => {
     name: body.name,
     number: body.number,
   })
+  
 
   person
     .save()
